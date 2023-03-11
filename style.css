@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+:root{
+
+    --box-shadow:5px 5px 10px #e6e6e6,-5px -5px 10px #ffffff;
+    --box-bg:#ffffff;
+    --box-radius:1rem;
+    --text-color: black;
+    --btn-bg:#ffffff;
+    --accent-bg:#EE4266;
+    --equals-bg:#0EAD69;
+    --hover-color:#3BCEAC;
+    --btn-text-color: black;
+}
+body{
+    margin:0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--box-bg);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.theme{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}.theme h1{
+    margin: 0;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(61, 61, 61);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 70px;
+    font-size: 32px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    background: var(--box-bg);
+    box-shadow: var(--box-shadow);
+    color: var(--text-color);
+}
+.display h1,p{
+    margin: 0;
+    padding-right: 1rem;
+}
+
+.display p{
+    font-size: 20px;
+
+    color: var(--text-color);
+    opacity: 75%;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(auto,60px));
+    grid-template-areas: "seven eight nine del"
+                         "four five six addbtn"
+                         "one two three subtractbtn"
+                         "decimal zero dividebtn multiplybtn"
+                         "reset reset equals equals";
+    gap: 1rem;
+
+    justify-items: center;
+    background-color: black;
+    padding: 1rem;
+    background: var(--box-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--box-radius);
+
+}
+
+button {
+    font-family: 'League Spartan', sans-serif;
+    
+    background: var(--btn-bg);
+    box-shadow: var(--box-shadow-btn);
+    border-radius: var(--box-radius);
+    color: var(--btn-text-color);
+    border: none;
+    width: 100%;
+    font-size: 25px;
+    padding: 1rem;
+}
+button:hover{
+    background: var(--hover-color);
+    transition: all .4s;
+}
+
+.one{
+    grid-area:one;
+}
+.two{
+    grid-area:two;
+}
+.three{
+    grid-area:three;
+}
+.four{
+    grid-area:four ;
+}
+.five{
+    grid-area:five ;
+}
+.six{
+    grid-area:six ;
+}
+.seven{
+    grid-area:seven ;
+}
+.eight{
+    grid-area:eight ;
+}
+.nine{
+    grid-area:nine ;
+}
+.addbtn{
+    grid-area:addbtn;
+}
+.subtractbtn{
+    grid-area:subtractbtn ;
+}
+.multiplybtn{
+    grid-area:multiplybtn;
+}
+.dividebtn{
+    grid-area:dividebtn ;
+}
+.del{
+    grid-area:del;
+    color: white;
+    background: var(--accent-bg);
+}
+
+.reset{
+    grid-area:reset;
+    color: white;
+    background: var(--accent-bg);
+}
+
+.equals{
+    grid-area:equals;
+    color: white;
+    background: var(--equals-bg);
+}
+
+.slider {
+    background-color: black;
+    width: 60px;
+    height: 2px;
+}
+.element{
+    position: relative;
+    top: -9px;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+}

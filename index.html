@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/calc.png">
+  
+  <title>Calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <main class="main">
+      <section class="theme">
+        <h1>Calc</h1>
+        <div class="slider">
+          <div class="element" data-value="1">
+          </div>
+        </div>
+      </section>
+      <section class="display">
+        <div class="result"><h1 id="display-text"></h1></div>
+        <div><p class="reference"></p></div>
+      </section>
+      <section class="buttons">
+        <button class="seven" value="7">7</button> <button class="eight" value="8">8</button> <button class="nine" value="9">9</button> <button class="del" value="del">Del</button>
+        <button class="four" value="4">4</button><button class="five" value="5">5</button><button class="six" value="6">6</button><button class="addbtn" value="+">+</button>
+        <button class="one" value="1">1</button><button class="two" value="2">2</button><button class="three" value="3">3</button><button class="subtractbtn" value="-">-</button>
+        <button class="decimal" value=".">.</button><button class="zero" value="0">0</button><button class="dividebtn" value="/">/</button><button class="multiplybtn" value="*">*</button>
+        <button class="reset">RESET</button><button class="equals">=</button>
+      </section>
+    </main>
+  </div>
+
+  
+  <script src="main.js"></script>
+</body>
+</html>
