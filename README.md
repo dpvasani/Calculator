@@ -23,7 +23,4 @@ Welcome to the Calculator Website! This website allows users to perform basic ar
 - JavaScript
 
 ## License
-
-This project is licensed under the [License Name]. See the [LICENSE](LICENSE) file for details.
-
-Please replace "[License Name]" with the appropriate license for your project.
+### All Right Reserved 
